@@ -1,0 +1,455 @@
+*{
+    box-sizing: border-box;
+    font-family: 'CaslonAntique', serif;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'AltarGothicDemo-Regular';
+  src: url('../fonts/altar-gothic-demo/AltarGothicDemo-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'CaslonAntique';
+  src: url('../fonts/caslon-antique/CaslonAntique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+main h2{
+    font-family: 'AltarGothicDemo-Regular', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: normal;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+main h3{
+    font-family: 'AltarGothicDemo-Regular', sans-serif;
+    letter-spacing: 4px;
+    font-size: 35px;
+    font-weight: normal;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.inicio {
+    background-image: url('../pictures/introBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;}
+
+header{
+    width: 100%;    
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.header-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fixed-header{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.774);
+    background: rgba(0, 0, 0, 0.733);
+}
+
+#headerLeft{
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+#headerLeft img{
+    width: 200px;
+}
+
+#headerRight{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex: 0 0 auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav li{
+    padding-right: 25px;
+    font-size: 25px;
+}
+
+nav a:hover{
+    color: orange;
+    text-decoration: underline orange;
+    transition: 0.3s;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+li button{
+    padding-left: 20px;
+    width: 75px;
+}
+
+#intro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text{
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 4px #000000;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+.intro-text h2{
+    margin-bottom: 10px;
+}
+
+.intro-text p{
+    font-size: 24px;
+}
+
+main {
+    background-image: url("https://static.wixstatic.com/media/05e3dc_9a652459a41748d1bba89f5918d38055.jpg/v1/fill/w_1920,h_560,al_c,q_85,enc_auto/05e3dc_9a652459a41748d1bba89f5918d38055.jpg");
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-position: center bottom;
+}
+
+main a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+main a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.main-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+}
+
+.content{
+    font-size: 25px;
+}
+
+.main-container h2{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-main{
+    list-style: none;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+.card-main img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+}
+
+.cards a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cards a:hover {
+    text-decoration: underline;
+}
+
+hr{
+    border: 1px solid aliceblue;
+    margin: 60px 0;
+}
+
+#story-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.hCard{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hCard p{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.hCard img{
+    width: 300px;
+    margin: auto;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+}
+
+.saiba-mais{
+    border: 2px solid aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.saiba-mais:hover{
+    background: rgba(216, 216, 216, 0.24);
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.album-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.album-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.album-card img{
+    width: 300px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+}
+
+.playlist{
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.445);
+    border-radius: 30px;
+}
+
+.playlist li{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 30px;
+}
+
+.playlist li img{
+    border: none;
+    width: 25px;
+    margin-right: 30px;
+    padding: none;
+}
+
+.playlist hr{
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    width: 92.5%;
+    margin: 0;
+    justify-self: center;
+}
+
+.first-music{
+    border-radius: 30px 30px 0 0;
+}
+
+.last-music{
+    border-radius: 0 0 30px 30px;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.534);
+    color: rgb(134, 134, 134);
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.774);
+    width: 100%;
+}
+
+footer a{
+    color: rgb(134, 134, 134);
+    transition: 0.3s;
+}
+
+
+
+.menu-suspenso {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-suspenso span {
+    color: aliceblue;
+    cursor: pointer;
+    user-select: none;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: rgba(0, 0, 0, 0.774);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    min-width: 150px;
+}
+
+.menu-suspenso:hover .options {
+    display: block;
+}
+
+.options a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.icon{
+    width: 20px;
+    margin-right: 5px; 
+}
+
+#integrantes-content{
+    margin-top: 150px;
+}
+
+.integrante{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.integrante h3{
+    margin: 0;
+}
+
+.imagem{
+    width: 100%;
+    max-width: 300px;
+}
+
+.imagem img{
+    width: 100%;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+}
+
+.imagem span{
+    text-align: center;
+    margin-top: 10px;
+    color: darkgrey;
+}
+
+.info{
+    width: 70%;
+}
+
+#n-importa{
+    font-size: 30px;
+}
+
+#ex-integrantes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+#ex-integrantes li{
+    text-align: center;
+}
+
+#ex-integrantes li img{
+    width: 60%;
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+    box-shadow: 0 0px 30px rgb(0, 0, 0);
+}
+
+.imagemHistoria{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#historiaContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#historiaContent h2{
+    margin: 60px auto;
+}
